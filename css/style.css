@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+@font-face{
+    font-family: axis;
+    src: url('axis.otf')
+}
+@font-face{
+    font-family: gilroy;
+    src: url('gilroy.otf');
+}
+body{
+    margin: 0;
+}
+.first h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    text-transform: lowercase;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.829);
+    text-align: center;
+    margin: 1em 2em;
+}
+.first h1 span{
+    color: rgba(12, 68, 65, 0.75);
+}
+.hero-bg{
+    background: url('../images/back.jpg');
+    margin: 0;
+    background-position: 50% -400%;
+    padding-bottom: 4em;
+
+}
+.heading {
+    display: block;
+    margin-left: 3em;
+    margin-top: ;
+}
+.about{
+    margin-top: 10em;
+    margin-left: -2em;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 255, 255, 0.829);
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+}
+.edu{
+
+    margin-left: 0.8em;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 255, 255, 0.829);
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+}
+.ph{
+
+    margin-left: 0.8em;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 255, 255, 0.829);
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+}
+.pro{
+
+    margin-left: 0.8em;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 255, 255, 0.829);
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+}
+.con{
+
+    margin-left: 0.4em;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 255, 255, 0.829);
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+}
+.container1{
+    background: white;
+    width: 100%;
+    padding-top: 1.2em;
+    padding-bottom: 6em;
+}
+.container1 img{
+    margin-left:33%;
+    box-shadow: lightseagreen 16px 16px 0px;
+}
+.container1 h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    font-weight: lighter;
+    margin: 2em 3em;
+    text-align: center;
+    text-transform: lowercase;
+    line-height: 2em;
+}
+.container1 h2 span{
+    font-weight: bold;
+    color: lightseagreen;
+    display: block;
+    font-size: 2.5em;
+    margin-top: 0.6em;
+    line-height: 1.2em;
+
+}
+input[type=button]{
+    margin-left: 34%;
+    border:black  solid 5px;
+    background-color: transparent;
+    color: black;
+    padding: 1em 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+input[type=button]:hover{
+    background-color:lightseagreen;
+    transition-duration: 0.5s;
+}
+input[type=button]:active{
+    background-color:rgb(53, 53, 53);
+    color: white;
+    transition-duration: 0.01s;
+}
+
+
+@media(min-width: 740px)
+{
+    
+}
+@media(min-width: 930px)
+{
+    .heading h2{
+        font-family: 'Montserrat', sans-serif;
+        font-size:150%;
+        color: rgba(255, 255, 255, 0.750);
+        margin: 1em 2em;
+        text-align: right;
+    }
+    .first h1{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3em;
+        text-transform: lowercase;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.829);
+        text-align: left;
+        margin: 0em 2em;
+    }
+    .first h1 span{
+        display: block;
+        color: rgba(12, 68, 65, 0.75);
+        margin-bottom: 1em;
+    }
+    .container1{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        grid-template-areas: "left right";
+    }
+    .container1 img{
+        grid-area: right;
+        width: 60%;
+        margin-left: 10em;
+        margin-top: 1em;
+    }
+    .container1 h2{
+        grid-area: left;
+        text-align: left;
+
+    }
+    .container1 h2 span{
+        margin-top: 2px;
+    }
+    input[type=button]{
+        display: block;
+        width: 10em;
+        margin-top: -2em;
+        margin-left: 3.8em;
+    }
+
+}
